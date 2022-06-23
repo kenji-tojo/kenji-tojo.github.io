@@ -72,6 +72,30 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* Custom kenji-tojo */
+
+.portfolio {
+	display: flex;
+}
+
+.portfolio-image {
+	flex: 25%;
+	padding: 20px;
+}
+
+.portfolio-text {
+	flex: 60%;
+}
+
+.project-page {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.title-and-authors {
+	text-align: center;
+}
+
 /* Basic */
 
 	html {

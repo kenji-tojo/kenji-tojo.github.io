@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>PosterNeRF</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div class="project-page">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="paper-content">
+								<div class="container" >
+                                    <div class="title-and-authors">
+                                        <h3>Recolorable Posterization of Volumetric Radiance Fields<br/>
+                                            Using Visibility-Weighted Palette Extraction
+                                        </h3>
+                                        <p>
+                                            <a href="../../index.html">Kenji Tojo</a>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <a href="https://cgenglab.github.io/labpage/en/authors/admin/">Nobuyuki Umetani</a>
+											<br/><br/>
+											In <i>Eurographics Symposium on Rendering (EGSR) 2022</i>
+                                        </p>
+                                    </div>
+                                    <!-- <div class="image main" data-position="center"> -->
+                                    <div data-position="center">
+                                        <img src="teaser.png" alt="" width="100%" />
+                                    </div>
+                                    <p>
+										<i>
+										Gallery of stylization results.
+										Original renderings were posterized using the palettes extracted
+										by our visibility-weighted method and recolored changing the marked palette colors (left-to-right).
+										</i>
+									</p>
+                                    <h3>Abstract</h3>
+									<p>
+                                        Volumetric radiance fields have recently gained significant attention as promising representations of photorealistic scene reconstruction.
+                                        However, the non-photorealistic rendering of such a representation has barely been explored.
+                                        In this study, we investigate the artistic posterization of the volumetric radiance fields.
+                                        We extend the recent palette-based image-editing framework,  which naturally introduces intuitive color manipulation of the posterized results, into the radiance field.
+                                        Our major challenge is applying stylization effects coherently across different views.
+                                        Based on the observation that computing a palette frame-by-frame can produce flickering, we propose pre-computing a single palette from the volumetric radiance field covering its entire visible color.
+                                        We present a method based on volumetric visibility to sample visible colors from the radiance field while avoiding occluded and noisy regions.
+                                        We demonstrate our workflow by applying it to pre-trained volumetric radiance fields with various stylization effects.
+                                        We also show that our approach can produce more coherent and robust stylization effects than baseline methods that compute a palette on each rendered view.
+                                    </p>
+                                    <h3>Resources</h3>
+									<a href="https://drive.google.com/file/d/1HjAVDBiainhDAEejmDPH8WrvRxk-Fbtw/view?usp=sharing" class="icon fa-file-pdf"> &nbsp;Paper</a>
+									&nbsp;/&nbsp;
+									<a href="https://www.youtube.com/watch?v=xO4uyGcwjXA" class="icon brands fa-youtube"> &nbsp;Supplemental video</a>
+									
+									
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+
+	</body>
+</html>

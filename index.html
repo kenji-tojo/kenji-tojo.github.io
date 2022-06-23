@@ -10,20 +10,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-        <style type="text/css">
-            .portfolio {
-                display: flex;
-            }
-
-            .portfolio-image {
-                flex: 25%;
-                padding: 10px;
-            }
-
-            .portfolio-text {
-                flex: 60%;
-            }
-        </style>
 	</head>
 	<body class="is-preload">
 
@@ -40,7 +26,6 @@
 						<li><a href="#about" class="active">About</a></li>
 						<li><a href="#publications">Publications</a></li>
 						<li><a href="#projects">Projects</a></li>
-						<!-- <li><a href="#four">Contact</a></li> -->
 					</ul>
 				</nav>
 				<footer>
@@ -83,25 +68,44 @@
 							<section id="publications">
 								<div class="container">
 									<h3>Publications</h3>
+
+                                    <div class="portfolio">
+                                        <div class="portfolio-image"><img src="images/posternerf.png" alt="" width="100%"/></div>
+                                        <div class="portfolio-text">
+                                            <h4>Recolorable Posterization of Volumetric Radiance Fields
+												Using Visibility-Weighted Palette Extraction
+											</h4>
+
+                                            <p>Stylization and recoloring by extracting a color palette from noisy neural radiance fields.
+												<br/>
+                                                <a href="publications/posternerf/project.html">Project Website</a>
+												<br/>
+												<i>Eurographics Symposium on Rendering (EGSR) 2022</i>
+                                            </p>
+                                        </div>
+                                    </div>
+
                                     <div class="portfolio">
                                         <div class="portfolio-image"><img src="images/nmc.jpg" alt="" width="100%"/></div>
                                         <div class="portfolio-text">
-                                            <h4>Neural Motion Compression with Frequency-adaptive Fourier Feature Network</h3>
+                                            <h4>Neural Motion Compression with Frequency-adaptive Fourier Feature Network</h4>
 
-                                            <p>Mocap data compression using a neural implicit representation with adaptive Fourier features.<br/>
+                                            <p>Mocap data compression using a neural implicit representation with adaptive Fourier features.
+												<br/>
                                                 <a href="https://cgenglab.github.io/labpage/en/publication/eg22short_neuralcompression/">Project Website</a>
                                                 &nbsp;/&nbsp;
                                                 <a href="https://github.com/cgenglab/ffmc">Code</a>
+												<br/>
+												<i>Eurographics 2022 Short Paper (EG 2022 Short)</i>
                                             </p>
-                                            
-                                            <p>In Eurographics 2022 Short Paper Program (EG 2022 short)</p>
                                         </div>
                                     </div>
+									
 								</div>
 							</section>
 
 						<!-- Three -->
-							<section id="three">
+							<section id="projects">
 								<div class="container">
 									<h3>Projects</h3>
                                     <p>Selected personal projects (coming soon).</p>
