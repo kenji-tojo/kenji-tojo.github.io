@@ -10,6 +10,20 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <style type="text/css">
+            .portfolio {
+                display: flex;
+            }
+
+            .portfolio-image {
+                flex: 25%;
+                padding: 10px;
+            }
+
+            .portfolio-text {
+                flex: 60%;
+            }
+        </style>
 	</head>
 	<body class="is-preload">
 
@@ -24,8 +38,8 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="#about" class="active">About</a></li>
-						<li><a href="#publications">Things I Can Do</a></li>
-						<li><a href="#projects">A Few Accomplishments</a></li>
+						<li><a href="#publications">Publications</a></li>
+						<li><a href="#projects">Projects</a></li>
 						<!-- <li><a href="#four">Contact</a></li> -->
 					</ul>
 				</nav>
@@ -59,7 +73,8 @@
                                         advised by Prof. <a href="https://cgenglab.github.io/labpage/en/authors/admin/">Nobuyuki Umetani</a>.
                                     </p>
                                     <p>
-                                        My research interest includes
+                                        My research interest includes emerging graphics techniques such as inverse/differentiable rendering and neural scene/geometry representations.
+                                        I'm also interested in applying these analysis-by-synthesis methods in interactive content creation.
                                     </p>
 								</div>
 							</section>
@@ -68,15 +83,20 @@
 							<section id="publications">
 								<div class="container">
 									<h3>Publications</h3>
-									<p></p>
-									<!-- <ul class="feature-icons">
-										<li class="icon solid fa-code">Write all the code</li>
-										<li class="icon solid fa-cubes">Stack small boxes</li>
-										<li class="icon solid fa-book">Read books and stuff</li>
-										<li class="icon solid fa-coffee">Drink much coffee</li>
-										<li class="icon solid fa-bolt">Lightning bolt</li>
-										<li class="icon solid fa-users">Shadow clone technique</li>
-									</ul> -->
+                                    <div class="portfolio">
+                                        <div class="portfolio-image"><img src="images/nmc.jpg" alt="" width="100%"/></div>
+                                        <div class="portfolio-text">
+                                            <h4>Neural Motion Compression with Frequency-adaptive Fourier Feature Network</h3>
+
+                                            <p>Mocap data compression using a neural implicit representation with adaptive Fourier features.<br/>
+                                                <a href="https://cgenglab.github.io/labpage/en/publication/eg22short_neuralcompression/">Project Website</a>
+                                                &nbsp;/&nbsp;
+                                                <a href="https://github.com/cgenglab/ffmc">Code</a>
+                                            </p>
+                                            
+                                            <p>In Eurographics 2022 Short Paper Program (EG 2022 short)</p>
+                                        </div>
+                                    </div>
 								</div>
 							</section>
 
@@ -84,7 +104,7 @@
 							<section id="three">
 								<div class="container">
 									<h3>Projects</h3>
-                                    <p>Selected personal projects.</p>
+                                    <p>Selected personal projects (coming soon).</p>
 								</div>
 							</section>
 
