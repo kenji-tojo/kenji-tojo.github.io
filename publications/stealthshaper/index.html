@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>StealthShaper</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="keywords" content="palette, convex hull, posterization, nerf" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div class="project-page">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="paper-content">
+								<div class="container" >
+                                    <div class="title-and-authors">
+                                        <h3>Stealth Shaper: Reflectivity Optimization as Surface Stylization</h3>
+                                        <p>
+                                            <a href="../../">Kenji Tojo</a>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <a href="https://faculty.runi.ac.il/arik/site/index.asp">Ariel Shamir</a>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <a href="http://berndbickel.com/">Bernd Bickel</a>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <a href="https://cgenglab.github.io/en/authors/admin/">Nobuyuki Umetani</a>
+											<br/><br/>
+											In <i>ACM SIGGRAPH 2023 (Conf.)</i>
+                                        </p>
+                                    </div>
+                                    <!-- <div class="image main" data-position="center"> -->
+                                    <div data-position="center">
+                                        <img src="teaser.png" alt="" width="100%" />
+                                    </div>
+                                    <p>
+										<i>
+										Gallery of stylization results.
+										Original renderings were posterized using the palettes extracted
+										by our visibility-weighted method and recolored by changing the marked palette colors (left-to-right).
+										</i>
+									</p>
+                                    <h3>Abstract</h3>
+									<p>
+                                        We present a technique to optimize the reflectivity of a surface while preserving its overall shape.
+										The naïve optimization of the mesh vertices using the gradients of reflectivity simulations results in undesirable distortion.
+										In contrast, our robust formulation optimizes the surface normal as an independent variable that bridges the reflectivity term with differential rendering, and the regularization term with as-rigid-as-possible elastic energy.
+										We further adaptively subdivide the input mesh to improve the convergence.
+										Consequently, our method can minimize the retroreflectivity of a wide range of input shapes, resulting in sharply creased shapes ubiquitous among stealth aircraft and Sci-Fi vehicles.
+										Furthermore, by changing the reward for the direction of the outgoing light directions, our method can be applied to other reflectivity design tasks, such as the optimization of architectural walls to concentrate light in a specific region.
+										We have tested the proposed method using light-transport simulations and real-world 3D-printed objects.
+                                    </p>
+                                    <h3>Resources</h3>
+									<a href="./" class="icon fa-file-pdf"> &nbsp;Paper (arXiv)</a>
+									&nbsp;/&nbsp;
+									<a href="./" class="icon brands fa-youtube"> &nbsp;Supplemental</a>
+									&nbsp;/&nbsp;
+									<a href="./" class="icon brands fa-github"> &nbsp;Code</a>
+									<!-- &nbsp;/&nbsp;
+									<a href="./" class="icon fa-file-powerpoint"> &nbsp;Slides</a> -->
+									<!-- &nbsp;/&nbsp;
+									<a href="./" class="icon brands fa-youtube"> &nbsp;Presentation</a> -->
+
+									<p>
+									<h3>Citation</h3>
+									<pre><code>@inproceedings{Tojo2023Stealth,
+	title = {Stealth Shaper: Reflectivity Optimization as Surface Stylization},
+	author = {Tojo, Kenji and Shamir, Ariel and Bickel, Bernd and Umetani, Nobuyuki},
+	booktitle = {ACM SIGGRAPH 2023 Conference Proceedings},
+	year = {2023},
+	series = {SIGGRAPH '23},
+}
+</code></pre>
+									</p>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+
+	</body>
+</html>
