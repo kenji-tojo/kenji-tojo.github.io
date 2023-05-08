@@ -41,14 +41,15 @@
                                     <div data-position="center">
                                         <img src="teaser.png" alt="" width="100%" />
                                     </div>
+
+									<div style="text-align:justify">
                                     <p>
-										<i>
-										Gallery of stylization results.
-										Original renderings were posterized using the palettes extracted
-										by our visibility-weighted method and recolored by changing the marked palette colors (left-to-right).
-										</i>
+									<i>The input shape (left) is transformed to the stealth one (middle), i.e., the reflection of the shape is minimal in the incoming light direction compared to the original shape (right).</i>
 									</p>
+									</div>
+
                                     <h3>Abstract</h3>
+									<div style="text-align:justify">
 									<p>
                                         We present a technique to optimize the reflectivity of a surface while preserving its overall shape.
 										The naïve optimization of the mesh vertices using the gradients of reflectivity simulations results in undesirable distortion.
@@ -58,6 +59,8 @@
 										Furthermore, by changing the reward for the direction of the outgoing light directions, our method can be applied to other reflectivity design tasks, such as the optimization of architectural walls to concentrate light in a specific region.
 										We have tested the proposed method using light-transport simulations and real-world 3D-printed objects.
                                     </p>
+									</div>
+
                                     <h3>Resources</h3>
 									<a href="https://drive.google.com/file/d/1W0698mDK7T7dw3_ZhW0vUO8G2dYY4nKk/view?usp=sharing" class="icon fa-file-pdf"> &nbsp;Paper</a>
 									&nbsp;/&nbsp;
@@ -68,6 +71,61 @@
 									<a href="./" class="icon fa-file-powerpoint"> &nbsp;Slides</a> -->
 									<!-- &nbsp;/&nbsp;
 									<a href="./" class="icon brands fa-youtube"> &nbsp;Presentation</a> -->
+									<br>
+									<br>
+									<br>
+
+                                    <h3>Video</h3>
+									<div style="aspect-ratio:16/9">
+									<iframe width="100%" height="100%" src="https://www.youtube.com/embed/pebuUHPoY_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+									</div>
+									<br>
+									<br>
+
+									<h3>Selected Figures</h3>
+
+                                    <div data-position="center">
+                                        <img src="workflow.jpg" alt="" width="100%" />
+                                    </div>
+									<div style="text-align:justify">
+                                    <p>
+									<b>Fig. 3: </b>
+									<i>Workflow of our method. We optimize the reflectivity of the input shape by iterating the gradient-based normal optimization and ARAP-based vertex recovering. We also perform an adaptive edge subdivision to introduce sharp creases, crucial for certain reflectivity properties, such as the stealth property.</i>
+									</p>
+									</div>
+									<br>
+
+                                    <div data-position="center">
+                                        <img src="adaptive.jpg" alt="" width="100%" />
+                                    </div>
+									<div style="text-align:justify">
+                                    <p>
+									<b>Fig. 5: </b>
+									<i>The ARAP-based regularization results in several triangles not fully optimized (left). Our adaptive meshing first finds problematic edges (shown in red) and then subdivides them (shown in blue) to further reduce E_refl (right).</i>
+									</p>
+									</div>
+									<br>
+
+                                    <div data-position="center">
+                                        <img src="experiment.jpg" alt="" width="100%" />
+                                    </div>
+									<div style="text-align:justify">
+                                    <p>
+									<b>Fig. 9: </b>
+									<i>Experiment setup. Parallel incoming and outgoing light directions assumed by the stealth energy were achieved by placing a half-mirror tilted 45° in front of the camera. The target object was placed on a rotating table.</i>
+									</p>
+									</div>
+									<br>
+
+                                    <div data-position="center">
+                                        <img src="sunlight_web.jpg" alt="" width="100%" />
+                                    </div>
+									<div style="text-align:justify">
+                                    <p>
+									<b>Fig. 10: </b>
+									<i>Examples of reflectivity optimization enabled with our framework. We visualize the amount of sunlight reflection coming from the direction indicated by orange arrows. Our algorithm can find a building shape that collects sunlight (a) to a point or (b) on a line to optimize daylighting. Our method can also (c) deflect sunlight from a point (see blue arrow) to avoid undesirable sunlight concentration [Zhu et al. 2019]. Examples (a) and (b) increased the energy respectively to 350% and 280% of the input shape's value, and example (c) decreased the energy to the original's 9%. The image is from wikipedia.com by Colin under CC BY-SA 4.0.</i>
+									</p>
+									</div>
 
 									<p>
 									<h3>Citation</h3>
@@ -80,6 +138,7 @@
 }
 </code></pre>
 									</p>
+
 								</div>
 							</section>
 
