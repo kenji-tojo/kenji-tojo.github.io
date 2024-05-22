@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>StealthShaper</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="keywords" content="palette, convex hull, posterization, nerf" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div class="project-page">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="paper-content">
+								<div class="container" >
+                                    <div class="title-and-authors">
+                                        <h3>Stealth Shaper: Reflectivity Optimization as Surface Stylization</h3>
+                                        <p>
+                                            <a href="../../">Kenji Tojo</a>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <a href="https://faculty.runi.ac.il/arik/site/index.asp">Ariel Shamir</a>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <a href="http://berndbickel.com/about-me">Bernd Bickel</a>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <a href="https://cgenglab.github.io/en/authors/admin/">Nobuyuki Umetani</a>
+											<br/><br/>
+											In <i>ACM SIGGRAPH 2023 - Conference Track</i>
+                                        </p>
+                                    </div>
+                                    <!-- <div class="image main" data-position="center"> -->
+                                    <div data-position="center">
+                                        <img src="teaser.png" alt="" width="100%" />
+                                    </div>
+
+									<div style="text-align:justify">
+                                    <p>
+									<i>The input shape (left) is transformed to the stealth one (middle), i.e., the reflection of the shape is minimal in the incoming light direction compared to the original shape (right).</i>
+									</p>
+									</div>
+
+                                    <h3>Abstract</h3>
+									<div style="text-align:justify">
+									<p>
+                                        We present a technique to optimize the reflectivity of a surface while preserving its overall shape.
+										The naïve optimization of the mesh vertices using the gradients of reflectivity simulations results in undesirable distortion.
+										In contrast, our robust formulation optimizes the surface normal as an independent variable that bridges the reflectivity term with differential rendering, and the regularization term with as-rigid-as-possible elastic energy.
+										We further adaptively subdivide the input mesh to improve the convergence.
+										Consequently, our method can minimize the retroreflectivity of a wide range of input shapes, resulting in sharply creased shapes ubiquitous among stealth aircraft and Sci-Fi vehicles.
+										Furthermore, by changing the reward for the direction of the outgoing light directions, our method can be applied to other reflectivity design tasks, such as the optimization of architectural walls to concentrate light in a specific region.
+										We have tested the proposed method using light-transport simulations and real-world 3D-printed objects.
+                                    </p>
+									</div>
+
+                                    <h3>Resources</h3>
+									<a href="https://drive.google.com/file/d/13652dJMGVGwqG2AbfL-eg9lOFh6tVQpA/view?usp=sharing" class="icon fa-file-pdf"> &nbsp;Preprint</a>
+									&nbsp;/&nbsp;
+									<a href="https://dl.acm.org/doi/10.1145/3588432.3591542" class="icon fa-file-pdf"> &nbsp;Publisher version</a>
+									&nbsp;/&nbsp;
+									<a href="https://youtu.be/pebuUHPoY_8" class="icon brands fa-youtube"> &nbsp;Supplemental</a>
+									&nbsp;/&nbsp;
+									<a href="https://www.youtube.com/watch?v=ocBPmfroKK4" class="icon brands fa-youtube"> &nbsp;Presentation</a>
+									&nbsp;/&nbsp;
+									<a href="https://github.com/kenji-tojo/stealth-shaper" class="icon brands fa-github"> &nbsp;Code</a>
+									<!-- &nbsp;/&nbsp;
+									<a href="./" class="icon fa-file-powerpoint"> &nbsp;Slides</a> -->
+									<!-- &nbsp;/&nbsp;
+									<a href="./" class="icon brands fa-youtube"> &nbsp;Presentation</a> -->
+									<br>
+									<br>
+									<br>
+
+                                    <h3>Presentation Video</h3>
+									<div style="aspect-ratio:16/9">
+									<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ocBPmfroKK4" title="[SIGGRAPH &#39;23] Presentation - Stealth Shaper: Reflectivity Optimization as Surface Stylization" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+									</div>
+									<br>
+									<br>
+
+                                    <h3>Supplemental Video</h3>
+									<div style="aspect-ratio:16/9">
+									<iframe width="100%" height="100%" src="https://www.youtube.com/embed/pebuUHPoY_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+									</div>
+									<br>
+									<br>
+
+									<h3>Selected Figures</h3>
+
+                                    <div data-position="center" style="text-align:center">
+                                        <img src="gallery.jpg" alt="" width="90%" />
+                                    </div>
+									<div style="text-align:justify">
+                                    <p>
+									<i>Stealth optimization examples. Our method successfully minimizes the retroreflectivity of various 3D models, while preserving the overall geometry of the input. For each model, we compare the retroreflectivity of the original shape (left) with that of the shape optimized using our method (right) as seen from 2 different views. For each model, the middle row lists the reflection images obtained from real-world measurements, whereas the bottom row lists the simulation results.</i>
+									</p>
+									</div>
+									<br>
+
+                                    <div data-position="center">
+                                        <img src="workflow.jpg" alt="" width="100%" />
+                                    </div>
+									<div style="text-align:justify">
+                                    <p>
+									<i>Workflow of our method. We optimize the reflectivity of the input shape by iterating the gradient-based normal optimization and ARAP-based vertex recovering. We also perform an adaptive edge subdivision to introduce sharp creases, crucial for certain reflectivity properties, such as the stealth property.</i>
+									</p>
+									</div>
+									<br>
+
+                                    <div data-position="center" style="text-align:center">
+                                        <img src="adaptive.jpg" alt="" width="80%" />
+                                    </div>
+									<div style="text-align:justify">
+                                    <p>
+									<i>The ARAP-based regularization results in several triangles not fully optimized (left). Our adaptive meshing first finds problematic edges (shown in red) and then subdivides them (shown in blue) to further reduce E_refl (right).</i>
+									</p>
+									</div>
+									<br>
+
+                                    <div data-position="center" style="text-align:center">
+                                        <img src="sunlight_web.jpg" alt="" width="80%" />
+                                    </div>
+									<div style="text-align:justify">
+                                    <p>
+									<i>Examples of reflectivity optimization enabled with our framework. We visualize the amount of sunlight reflection coming from the direction indicated by orange arrows. Our algorithm can find a building shape that collects sunlight (a) to a point or (b) on a line to optimize daylighting. Our method can also (c) deflect sunlight from a point (see blue arrow) to avoid undesirable sunlight concentration [Zhu et al. 2019]. Examples (a) and (b) increased the energy respectively to 350% and 280% of the input shape's value, and example (c) decreased the energy to the original's 9%. The image is from wikipedia.com by Colin under CC BY-SA 4.0.</i>
+									</p>
+									</div>
+
+									<p>
+									<h3>Citation</h3>
+									<pre><code>@inproceedings{Tojo2023Stealth,
+	title = {Stealth Shaper: Reflectivity Optimization as Surface Stylization},
+	author = {Tojo, Kenji and Shamir, Ariel and Bickel, Bernd and Umetani, Nobuyuki},
+	booktitle = {ACM SIGGRAPH 2023 Conference Proceedings},
+	year = {2023},
+	series = {SIGGRAPH '23},
+}
+</code></pre>
+									</p>
+
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+
+	</body>
+</html>
