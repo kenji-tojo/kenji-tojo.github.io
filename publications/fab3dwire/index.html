@@ -30,7 +30,7 @@
 							<section id="paper-content">
 								<div class="container" >
                                     <div class="title-and-authors">
-                                        <h3>Stealth Shaper: Reflectivity Optimization as Surface Stylization</h3>
+                                        <h3>Fabricable 3D Wire Art</h3>
                                         <p>
                                             <a href="../../">Kenji Tojo</a>
                                             &nbsp;&nbsp;&nbsp;&nbsp;
@@ -40,7 +40,7 @@
                                             &nbsp;&nbsp;&nbsp;&nbsp;
                                             <a href="https://cgenglab.github.io/en/authors/admin/">Nobuyuki Umetani</a>
 											<br/><br/>
-											In <i>ACM SIGGRAPH 2023 - Conference Track</i>
+											In <i>ACM SIGGRAPH 2024 - Conference Track</i>
                                         </p>
                                     </div>
                                     <!-- <div class="image main" data-position="center"> -->
@@ -50,20 +50,14 @@
 
 									<div style="text-align:justify">
                                     <p>
-									<i>The input shape (left) is transformed to the stealth one (middle), i.e., the reflection of the shape is minimal in the incoming light direction compared to the original shape (right).</i>
+									<i>Our method generates fabricable 3D wire art using various types of inputs such as text. The fabrication of wire art is guided by 3D-printed jigs.</i>
 									</p>
 									</div>
 
                                     <h3>Abstract</h3>
 									<div style="text-align:justify">
 									<p>
-                                        We present a technique to optimize the reflectivity of a surface while preserving its overall shape.
-										The naïve optimization of the mesh vertices using the gradients of reflectivity simulations results in undesirable distortion.
-										In contrast, our robust formulation optimizes the surface normal as an independent variable that bridges the reflectivity term with differential rendering, and the regularization term with as-rigid-as-possible elastic energy.
-										We further adaptively subdivide the input mesh to improve the convergence.
-										Consequently, our method can minimize the retroreflectivity of a wide range of input shapes, resulting in sharply creased shapes ubiquitous among stealth aircraft and Sci-Fi vehicles.
-										Furthermore, by changing the reward for the direction of the outgoing light directions, our method can be applied to other reflectivity design tasks, such as the optimization of architectural walls to concentrate light in a specific region.
-										We have tested the proposed method using light-transport simulations and real-world 3D-printed objects.
+										This paper presents a computational method for automatically creating fabricable 3D wire sculptures from various input modalities, including 3D models, images, and even text. There are several challenges to wire art creation. For example, artists must express the desired visual as a sparse wire representation. It is also difficult to manually bend wires in the air without guidance to fabricate the designed 3D curves. Our workflow solves these challenges by using two core techniques. First, we present an algorithm that automatically generates a fabricable 3D curve representation of the target based on a loss function that measures the semantic distance between the rendered curve and the target. The loss function can be defined using different pre-trained vision-language neural networks to generate wire art from different input types. The loss function is then optimized using differentiable rendering specifically targeting 3D parametric curves. Our method can incorporate various fabrication constraints on the wire as additional regularization terms in the optimization process. Second, we present an algorithm to generate a 3D printable jig structure that can be used to fabricate the generated wire path. The major challenge in the jig generation stems from the design of an intersection-free surface mesh for 3D printing, which we address with our inflation algorithm.  The experimental results indicate that our method can handle a wider range of input types and can produce physically fabricable wire shapes compared to previous wire generation methods. Various wire arts have been fabricated using our 3D-printed jig to demonstrate its effectiveness in 3D wire bending.
                                     </p>
 									</div>
 
