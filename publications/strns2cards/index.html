@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<div id="logo" style="opacity: 0;">Strands2Cards</div>
+<html>
+	<head>
+		<title>Strands2Cards</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="keywords" content="fabrication, wire art, curve modeling, differentiable rendering" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div class="project-page">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="paper-content">
+								<div class="container" >
+                                    <div class="title-and-authors">
+                                        <h3>Strands2Cards: Automatic Generation of Hair Cards from Strands</h3>
+                                        <p>
+                                            <a href="../../">Kenji Tojo</a>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <a href="https://scholar.google.com/citations?user=Mvq6pGcAAAAJ&hl=en">Liwen Hu</a>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <a href="https://cgenglab.github.io/en/authors/admin/">Nobuyuki Umetani</a>
+											&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <a href="https://www.hao-li.com/Hao_Li/Hao_Li_-_about_me.html">Hao Li</a>
+											<br/><br/>
+											In <i>ACM SIGGRAPH Asia 2025 - Conference Track</i>
+                                        </p>
+                                    </div>
+                                    <!-- <div class="image main" data-position="center"> -->
+                                    <div data-position="center">
+                                        <img src="teaser.jpg" alt="" width="100%" />
+                                    </div>
+
+									<div style="text-align:justify">
+                                    <p>
+									<i>
+										We present a method that automatically converts a strand-based hair model (a) into a hair card model (b), where hair is represented as textured polygon strips for efficient rendering.
+										Our approach enables real-time rendering of all 342 hair models from the USC-Hairsalon database [Hu et al. 2015] within a game engine (c).
+										Even on a laptop PC (MacBook Pro with an M3 Pro chip and 36 GB of unified memory), the scene consistently achieves 30 frames per second.
+									</i>
+									</p>
+									</div>
+
+                                    <h3>Abstract</h3>
+									<div style="text-align:justify">
+									<!-- <p style="font-size: 85%"> -->
+									<p>
+										We present a method for automatically converting strand-based hair models into an efficient mesh-based representation, known as hair cards, for real-time rendering.
+										Our method takes strands as inputs and outputs polygon strips with semi-transparent texture, preserving the appearance of the original strand-based hairstyle.
+										To achieve this, we first cluster strands into groups, referred to as wisps, and generate hairstyle-preserving texture maps for each wisp by skinning-based alignment of the strands into a normalized pose in UV space.
+										These textures can further be shared among similar wisps to better utilize the limited texture resolution.
+										Next, polygon strips are fitted to the clustered strands via tailored differentiable rendering that can optimize transparent cluster-colored coverage masks.
+										The proposed method successfully handles a wide range of hair models and outperforms existing approaches in representing volumetric hairstyles such as curly and wavy ones.
+										<!-- Furthermore, our strip optimization can efficiently convert a full-hair model with more than 100 thousand strands within 20 seconds. -->
+										<!-- Our method was extensively tested on both a hair database and many complex real-world hairstyles acquired using state-of-the-art hair capture methods. -->
+                                    </p>
+									</div>
+
+                                    <h3>Resources</h3>
+									<a href="https://www.dropbox.com/scl/fi/thidrqw3c58mn1ju2a8qr/sa25_strands2cards.pdf?rlkey=a1euz6cii69vp12yr1wmj240v&st=8l3jf3fr&dl=0" class="icon fa-file-pdf"> &nbsp;Paper</a>
+									<!-- &nbsp;/&nbsp;
+									<a href="https://dl.acm.org/doi/10.1145/3588432.3591542" class="icon fa-file-pdf"> &nbsp;Publisher version</a> -->
+									&nbsp;/&nbsp;
+									<a href="https://www.dropbox.com/scl/fi/4re0pe8f2b8u6p16egff3/sa25_strands2cards_video.mp4?rlkey=jo9x1a78clykmupdknc4plb4d&st=120pxgbx&dl=0" class="icon fa-file-video"> &nbsp;Video</a>
+									&nbsp;/&nbsp;
+									<a href="https://github.com/kenji-tojo/strns2cards" class="icon brands fa-github"> &nbsp;Code</a>
+									<!-- <a href="https://www.youtube.com/watch?v=ocBPmfroKK4" class="icon brands fa-youtube"> &nbsp;Presentation</a>
+									&nbsp;/&nbsp; -->
+									<!-- &nbsp;/&nbsp;
+									<a href="./" class="icon fa-file-powerpoint"> &nbsp;Slides</a> -->
+									<br>
+
+                                    <!-- <h3>Presentation Video</h3>
+									<div style="aspect-ratio:16/9">
+									<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ocBPmfroKK4" title="[SIGGRAPH &#39;23] Presentation - Stealth Shaper: Reflectivity Optimization as Surface Stylization" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+									</div>
+									<br>
+									<br> -->
+
+									<br>
+									<br>
+
+                                    <h3>Video</h3>
+									<div style="aspect-ratio:16/9">
+									<iframe width="100%" height="100%" src="https://www.youtube.com/embed/NljlZSzd40o?si=vbPYzx6jkWhCJmR6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									</div>
+									<br>
+
+									<p>
+									<h3>Citation</h3>
+									<pre><code>@inproceedings{Tojo2025Strands2Cards,
+  author    = {Tojo, Kenji and Hu, Liwen and Umetani, Nobuyuki and Li, Hao},
+  title     = {Strands2Cards: Automatic Generation of Hair Cards from Strands},
+  booktitle = {SIGGRAPH Asia 2025 Conference Papers (SA Conference Papers '25)},
+  year      = {2025},
+  publisher = {ACM},
+  address   = {New York, NY, USA},
+  pages     = {1--11},
+  doi       = {10.1145/3757377.3763864},
+  location  = {Hong Kong, Hong Kong},
+  month     = dec
+}
+</code></pre>
+									</p>
+
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+
+	</body>
+</html>
