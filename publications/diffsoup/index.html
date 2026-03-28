@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<div id="logo" style="opacity: 0;">DiffSoup</div>
+<html>
+	<head>
+		<title>DiffSoup</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="keywords" content="radiance field, triangle soup, differentiable rasterization, real-time rendering" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div class="project-page">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="paper-content">
+								<div class="container" >
+                                    <div class="title-and-authors">
+                                        <h3>DiffSoup: Direct Differentiable Rasterization of Triangle Soup for Extreme Radiance Field Simplification</h3>
+                                        <p>
+                                            <a href="../../">Kenji Tojo</a>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <a href="https://berndbickel.com/about-me">Bernd Bickel</a>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <a href="https://cgenglab.github.io/en/authors/admin/">Nobuyuki Umetani</a>
+											<br/><br/>
+											In <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026</i>
+                                        </p>
+                                    </div>
+                                    <div data-position="center">
+                                        <img src="teaser.jpg" alt="" width="100%" />
+                                    </div>
+
+									<div style="text-align:justify">
+                                    <p>
+									<i>
+										(a) Given multi-view RGB images, (b) we reconstruct a simplified radiance field as a textured triangle soup using differentiable rasterization.
+										(c) The resulting scene can be rendered within a standard depth-tested rasterization pipeline, enabling seamless visualization across devices&mdash;including a high-end desktop with a dedicated GPU, a consumer-grade laptop (MacBook Pro with an M3 Pro chip), and even a smartphone (iPhone 15).
+									</i>
+									</p>
+									</div>
+
+                                    <h3>Abstract</h3>
+									<div style="text-align:justify">
+									<p>
+										Radiance field reconstruction aims to recover high-quality 3D representations from multi-view RGB images.
+										Recent advances, such as 3D Gaussian splatting, enable real-time rendering with high visual fidelity on sufficiently powerful graphics hardware.
+										However, efficient online transmission and rendering across diverse platforms requires drastic model simplification, reducing the number of primitives by several orders of magnitude.
+										We introduce DiffSoup, a radiance field representation that employs a soup (i.e., a highly unstructured set) of a small number of triangles with neural textures and binary opacity.
+										We show that this binary opacity representation is directly differentiable via stochastic opacity masking, enabling stable training without a mollifier (i.e., smooth rasterization).
+										DiffSoup can be rasterized using standard depth testing, enabling seamless integration into traditional graphics pipelines and interactive rendering on consumer-grade laptops and mobile devices.
+                                    </p>
+									</div>
+
+                                    <h3>Resources</h3>
+									<a href="https://drive.google.com/file/d/1zp82kAB-IAe98sUn2ZKiHTqMJRdVW8lK/view?usp=sharing" class="icon fa-file-pdf"> &nbsp;Paper</a>
+									&nbsp;/&nbsp;
+									<a href="https://drive.google.com/file/d/1AszAuCFS0FS9ZRJgYd2E5os4jsm_lgg6/view?usp=sharing" class="icon fa-file-video"> &nbsp;Video</a>
+									&nbsp;/&nbsp;
+									<a href="https://github.com/kenji-tojo/diffsoup" class="icon brands fa-github"> &nbsp;Code</a>
+									<br>
+
+									<br>
+									<br>
+
+                                    <h3>Video</h3>
+									<div style="aspect-ratio:16/9">
+									<iframe width="100%" height="100%" src="https://www.youtube.com/embed/xoogpie7Nxs?si=svP-YLtClP_4DzQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									</div>
+									<br>
+
+									<p>
+									<h3>Citation</h3>
+									<pre><code>@inproceedings{tojo2026diffsoup,
+	author = {Tojo, Kenji and Bickel, Bernd and Umetani, Nobuyuki},
+	title = {DiffSoup: Direct Differentiable Rasterization of Triangle Soup for Extreme Radiance Field Simplification},
+	booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+	year = {2026}
+}
+</code></pre>
+									</p>
+
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+
+	</body>
+</html>
