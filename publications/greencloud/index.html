@@ -1,19 +1,18 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE HTML>
 <!--
 	Read Only by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<div id="logo" style="opacity: 0;">GreenCloud</div>
-<html>
+<html lang="en">
 	<head>
 		<title>GreenCloud</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="keywords" content="fabrication, wire art, curve modeling, differentiable rendering" />
+		<meta name="keywords" content="gradient filtering, Gaussian splatting, Green's functions, geometry processing" />
 		<link rel="stylesheet" href="../../assets/css/main.css" />
 	</head>
-	<body class="is-preload">
+	<body>
 
 		<!-- Wrapper -->
 			<div class="project-page">
@@ -25,7 +24,7 @@
 							<section id="paper-content">
 								<div class="container" >
                                     <div class="title-and-authors">
-                                        <h3>GreenCloud: Volumetric Gradient Filtering via Regularized Green’s Functions</h3>
+                                        <h3>GreenCloud: Volumetric Gradient Filtering via Regularized Green's Functions</h3>
                                         <p>
                                             <a href="../../">Kenji Tojo</a>
                                             &nbsp;&nbsp;&nbsp;&nbsp;
@@ -36,7 +35,6 @@
 											<b>🏆 Best Paper Honorable Mention 🏆</b>
                                         </p>
                                     </div>
-                                    <!-- <div class="image main" data-position="center"> -->
                                     <div data-position="center">
                                         <img src="teaser.jpg" alt="" width="100%" />
                                     </div>
@@ -54,14 +52,13 @@
 
                                     <h3>Abstract</h3>
 									<div style="text-align:justify">
-									<!-- <p style="font-size: 85%"> -->
 									<p>
 										Gradient-based optimization is a fundamental tool in geometry processing, but it is often hampered by geometric distortion
 										arising from noisy or sparse gradients. Existing methods mitigate these issues by filtering (i.e., diffusing) gradients over a surface
 										mesh, but they require explicit mesh connectivity and solving large linear systems.
 										In this work, we introduce a gradient filtering method tailored for point-based geometry, which bypasses
-										explicit connectivity using regularized Green’s functions to directly compute the filtered gradient field from discrete spatial
-										points. Additionally, our approach incorporates elastic deformation based on Green’s function of linear elasticity (known
+										explicit connectivity using regularized Green's functions to directly compute the filtered gradient field from discrete spatial
+										points. Additionally, our approach incorporates elastic deformation based on Green's function of linear elasticity (known
 										as Kelvinlets), reproducing various elastic behaviors such as smoothness and volume preservation while improving robustness
 										in affine transformations. We further accelerate computation using a hierarchical Barnes–Hut style approximation, enabling
 										scalable optimization of one million points. Our method significantly improves convergence across diverse applications,
@@ -71,24 +68,11 @@
 
                                     <h3>Resources</h3>
 									<a href="https://drive.google.com/file/d/142FXqObKKdvV68Iq9rnCfP14v8NN_r4z/view?usp=sharing" class="icon fa-file-pdf"> &nbsp;Paper</a>
-									<!-- &nbsp;/&nbsp;
-									<a href="https://dl.acm.org/doi/10.1145/3588432.3591542" class="icon fa-file-pdf"> &nbsp;Publisher version</a> -->
 									&nbsp;/&nbsp;
 									<a href="https://drive.google.com/file/d/1haZjEVO0cJYRjKxN9m49Ksk31Voedinu/view?usp=sharing" class="icon fa-file-video"> &nbsp;Video</a>
 									&nbsp;/&nbsp;
 									<a href="https://github.com/kenji-tojo/greencloud-paper" class="icon brands fa-github"> &nbsp;Code</a>
-									<!-- <a href="https://www.youtube.com/watch?v=ocBPmfroKK4" class="icon brands fa-youtube"> &nbsp;Presentation</a>
-									&nbsp;/&nbsp; -->
-									<!-- &nbsp;/&nbsp;
-									<a href="./" class="icon fa-file-powerpoint"> &nbsp;Slides</a> -->
 									<br>
-
-                                    <!-- <h3>Presentation Video</h3>
-									<div style="aspect-ratio:16/9">
-									<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ocBPmfroKK4" title="[SIGGRAPH &#39;23] Presentation - Stealth Shaper: Reflectivity Optimization as Surface Stylization" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-									</div>
-									<br>
-									<br> -->
 
 									<br>
 									<br>
@@ -102,7 +86,7 @@
 									<p>
 									<h3>Citation</h3>
 									<pre><code>@article{tojo2025greencloud,
-	title = {GreenCloud: Volumetric Gradient Filtering via Regularized Green’s Functions},
+	title = {GreenCloud: Volumetric Gradient Filtering via Regularized Green's Functions},
 	author = {Tojo, Kenji and Umetani, Nobuyuki},
 	journal = {Computer Graphics Forum},
 	number = {5},
@@ -127,15 +111,6 @@
 					</section>
 
 			</div>
-
-		<!-- Scripts -->
-			<script src="../../assets/js/jquery.min.js"></script>
-			<script src="../../assets/js/jquery.scrollex.min.js"></script>
-			<script src="../../assets/js/jquery.scrolly.min.js"></script>
-			<script src="../../assets/js/browser.min.js"></script>
-			<script src="../../assets/js/breakpoints.min.js"></script>
-			<script src="../../assets/js/util.js"></script>
-			<script src="../../assets/js/main.js"></script>
 
 	</body>
 </html>
