@@ -87,6 +87,34 @@ input, select, textarea {
 	flex: 60%;
 }
 
+@media screen and (max-width: 736px) {
+	.portfolio {
+		flex-direction: column;
+	}
+
+	.portfolio + .portfolio {
+		border-top: 1px solid #e4e4e4;
+		padding-top: 1.5em;
+		margin-top: 1.5em;
+	}
+
+	.portfolio-image {
+		flex: none;
+		width: 50%;
+		max-width: 20em;
+		padding: 0;
+		margin: 0 0 1em;
+	}
+
+	.portfolio-text {
+		flex: none;
+	}
+
+	.portfolio-text p:last-child {
+		margin-bottom: 0;
+	}
+}
+
 .project-page {
 	margin-left: auto;
 	margin-right: auto;
