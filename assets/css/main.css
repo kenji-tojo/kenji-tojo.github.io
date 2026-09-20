@@ -74,6 +74,10 @@ input, select, textarea {
 
 /* Custom kenji-tojo */
 
+#one .about-avatar {
+	display: none;
+}
+
 .portfolio {
 	display: flex;
 }
@@ -88,6 +92,12 @@ input, select, textarea {
 }
 
 @media screen and (max-width: 1024px) {
+	#one .about-avatar {
+		display: block;
+		width: 25%;
+		margin: 0 0 1.5em;
+	}
+
 	.portfolio {
 		flex-direction: column;
 	}
