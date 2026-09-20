@@ -94,7 +94,7 @@ input, select, textarea {
 @media screen and (max-width: 1024px) {
 	#one .about-avatar {
 		display: block;
-		width: 50%;
+		width: 25%;
 		margin: 0 0 1.5em;
 	}
 
@@ -110,7 +110,8 @@ input, select, textarea {
 
 	.portfolio-image {
 		flex: none;
-		width: 50%;
+		width: 40%;
+		max-width: 20em;
 		padding: 0;
 		margin: 0 0 1em;
 	}
@@ -121,6 +122,13 @@ input, select, textarea {
 
 	.portfolio-text p:last-child {
 		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	#one .about-avatar,
+	.portfolio-image {
+		width: 50%;
 	}
 }
 
